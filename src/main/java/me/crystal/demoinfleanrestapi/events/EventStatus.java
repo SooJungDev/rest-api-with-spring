@@ -1,6 +1,6 @@
 package me.crystal.demoinfleanrestapi.events;
 
-public enum EnventStatus {
+public enum EventStatus {
 
     DRAFT, PUBLISHED, BEGAN_ENROLLMENT;
 }
