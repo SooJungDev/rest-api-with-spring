@@ -6,5 +6,6 @@ me/crystal/demoinfleanrestapi/events/Event.class
 me/crystal/demoinfleanrestapi/events/EventController.class
 me/crystal/demoinfleanrestapi/events/EventValidator.class
 me/crystal/demoinfleanrestapi/events/EventStatus.class
+me/crystal/demoinfleanrestapi/common/ErrorsSerializer.class
 me/crystal/demoinfleanrestapi/Application.class
 me/crystal/demoinfleanrestapi/common/TestDescription.class
