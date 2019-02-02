@@ -1,9 +1,0 @@
-/Users/soojungchoi/rest-api-with-spring/src/main/java/me/crystal/demoinfleanrestapi/common/TestDescription.java
-/Users/soojungchoi/rest-api-with-spring/src/main/java/me/crystal/demoinfleanrestapi/Application.java
-/Users/soojungchoi/rest-api-with-spring/src/main/java/me/crystal/demoinfleanrestapi/events/EventValidator.java
-/Users/soojungchoi/rest-api-with-spring/src/main/java/me/crystal/demoinfleanrestapi/events/Event.java
-/Users/soojungchoi/rest-api-with-spring/src/main/java/me/crystal/demoinfleanrestapi/events/EventDto.java
-/Users/soojungchoi/rest-api-with-spring/src/main/java/me/crystal/demoinfleanrestapi/events/EventController.java
-/Users/soojungchoi/rest-api-with-spring/src/main/java/me/crystal/demoinfleanrestapi/common/ErrorsSerializer.java
-/Users/soojungchoi/rest-api-with-spring/src/main/java/me/crystal/demoinfleanrestapi/events/EventStatus.java
-/Users/soojungchoi/rest-api-with-spring/src/main/java/me/crystal/demoinfleanrestapi/events/EventRepository.java
