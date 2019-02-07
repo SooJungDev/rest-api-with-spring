@@ -1,8 +1,10 @@
 package me.crystal.demoinfleanrestapi.configs;
 
 import me.crystal.demoinfleanrestapi.accounts.Account;
+import me.crystal.demoinfleanrestapi.accounts.AccountRepository;
 import me.crystal.demoinfleanrestapi.accounts.AccountRole;
 import me.crystal.demoinfleanrestapi.accounts.AccountService;
+import me.crystal.demoinfleanrestapi.common.AppProperties;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -26,24 +28,37 @@ public class AppConfig {
     public PasswordEncoder passwordEncoder() {
         return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
-/*
+
     @Bean
-    public ApplicationRunner applicationRunner(){
-        return  new ApplicationRunner() {
+    public ApplicationRunner applicationRunner() {
+        return new ApplicationRunner() {
             @Autowired
             AccountService accountService;
+
+            @Autowired
+            AppProperties appProperties;
+
+
             @Override
             public void run(ApplicationArguments args) throws Exception {
-                Account soojung = Account.builder()
-                        .email("soojung@email.com")
-                        .password("soojung")
+                Account admin = Account.builder()
+                        .email(appProperties.getAdminUsername())
+                        .password(appProperties.getAdminPassword())
                         .roles(Set.of(AccountRole.ADMIN, AccountRole.USER))
                         .build();
 
-                accountService.saveAccount(soojung);
+                accountService.saveAccount(admin);
+
+                Account user = Account.builder()
+                        .email(appProperties.getUserUsername())
+                        .password(appProperties.getUserPassword())
+                        .roles(Set.of(AccountRole.USER))
+                        .build();
+
+                accountService.saveAccount(user);
 
             }
         };
-    }*/
+    }
 
 }
