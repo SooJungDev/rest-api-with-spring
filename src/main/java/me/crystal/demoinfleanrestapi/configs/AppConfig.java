@@ -26,7 +26,7 @@ public class AppConfig {
     public PasswordEncoder passwordEncoder() {
         return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
-
+/*
     @Bean
     public ApplicationRunner applicationRunner(){
         return  new ApplicationRunner() {
@@ -44,6 +44,6 @@ public class AppConfig {
 
             }
         };
-    }
+    }*/
 
 }
