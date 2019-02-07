@@ -7,16 +7,13 @@ import me.crystal.demoinfleanrestapi.accounts.AccountService;
 import me.crystal.demoinfleanrestapi.common.AppProperties;
 import me.crystal.demoinfleanrestapi.common.BaseControllerTest;
 import me.crystal.demoinfleanrestapi.common.TestDescription;
-import org.codehaus.jackson.JsonParser;
 import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.hateoas.MediaTypes;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
-import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.security.oauth2.common.util.Jackson2JsonParser;
 import org.springframework.test.web.servlet.ResultActions;
 
