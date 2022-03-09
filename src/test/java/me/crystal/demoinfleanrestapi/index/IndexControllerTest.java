@@ -1,7 +1,7 @@
 package me.crystal.demoinfleanrestapi.index;
 
 import me.crystal.demoinfleanrestapi.common.BaseControllerTest;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
